@@ -1,0 +1,28 @@
+#text {
+  display: inline-block;
+}
+
+#text-input {
+  display: inline-block;
+}
+
+#text2 {
+  display: inline-block;
+}
+
+#meme-insert {
+  display: inline-block;
+}
+
+#meme-image-container {
+  background-color: blueviolet;
+}
+
+#meme-text {
+  z-index: 2;
+}
+
+#meme-image {
+  position: absolute;
+  z-index: 1;
+}
