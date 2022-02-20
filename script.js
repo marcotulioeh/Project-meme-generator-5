@@ -1,4 +1,3 @@
-// Crie uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida.
 function isertPhrase() {
   const item = document.getElementById('text-input').value;
   const itemList = document.getElementById('meme-text');
@@ -11,7 +10,6 @@ function isertPhrase() {
 
 document.getElementById('text-input').addEventListener('keyup', isertPhrase);
 
-// O site deve permitir que quem usa faça upload de uma imagem de seu computador.
 // Função de preview de arquivo aprendida no artifgo https://www.horadecodar.com.br/2020/05/20/javascript-preview-de-imagem-carregada-em-input-file/
 function readImage() {
   if (this.files && this.files[0]) {
@@ -25,3 +23,57 @@ function readImage() {
 }
 
 document.getElementById('meme-insert').addEventListener('change', readImage, false);
+
+// function fire() {
+//   const createFire = document.createElement('div');
+//   createFire.id = 'input-fire';
+//   document.getElementById('meme-image-container').appendChild(createFire);
+// }
+
+// const inputFire = document.getElementById('fire');
+
+// inputFire.addEventListener('click', fire);
+
+// function water() {
+//   const createWater = document.createElement('div');
+//   createWater.id = 'input-water';
+//   document.getElementById('meme-image-container').appendChild(createWater);
+// }
+
+// const inputWater = document.getElementById('water');
+
+// inputWater.addEventListener('click', water);
+
+// function earth() {
+//   const createEarth = document.createElement('div');
+//   createEarth.id = 'input-earth';
+//   document.getElementById('meme-image-container').appendChild(createEarth);
+// }
+
+// const inputEarth = document.getElementById('earth');
+
+// inputEarth.addEventListener('click', earth);
+
+function fire() {
+  const borderMeme = document.getElementById('meme-image-container');
+  borderMeme.style.border = '3px dashed red';
+}
+
+const inputFire = document.getElementById('fire');
+inputFire.addEventListener('click', fire);
+
+function water() {
+  const borderMeme2 = document.getElementById('meme-image-container');
+  borderMeme2.style.border = '5px double blue';
+}
+
+const inputWater = document.getElementById('water');
+inputWater.addEventListener('click', water);
+
+function earth() {
+  const borderMeme3 = document.getElementById('meme-image-container');
+  borderMeme3.style.border = '6px groove green';
+}
+
+const inputEarth = document.getElementById('earth');
+inputEarth.addEventListener('click', earth);
