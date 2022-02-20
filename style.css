@@ -35,36 +35,6 @@
   height: 300px;
 }
 
-/* #input-fire {
-  position: absolute;
-  display: inline-block;
-  border: 5px solid red;
-  top: 0px;
-  left: 0px;
-  width: 350px;
-  height: 350px;
-}
-
-#input-water {
-  position: absolute;
-  display: inline-block;
-  border: 1px double blue;
-  top: 0px;
-  left: 0px;
-  width: 350px;
-  height: 350px;
-}
-
-#input-earth {
-  position: absolute;
-  display: inline-block;
-  border: 6px groove green;
-  top: 0px;
-  left: 0px;
-  width: 350px;
-  height: 350px;
-} */
-
 #fire {
   position: absolute;
   background-color: red;
@@ -87,4 +57,39 @@
   z-index: 2;
   top: 600px;
   left: 215px;
+}
+
+#memes-fames {
+  position: absolute;
+  display: inline-block;
+  padding: 2px;
+  top: 700px;
+}
+
+#meme-1 {
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#meme-2 {
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#meme-3 {
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#meme-4 {
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
 }

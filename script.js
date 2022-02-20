@@ -24,36 +24,6 @@ function readImage() {
 
 document.getElementById('meme-insert').addEventListener('change', readImage, false);
 
-// function fire() {
-//   const createFire = document.createElement('div');
-//   createFire.id = 'input-fire';
-//   document.getElementById('meme-image-container').appendChild(createFire);
-// }
-
-// const inputFire = document.getElementById('fire');
-
-// inputFire.addEventListener('click', fire);
-
-// function water() {
-//   const createWater = document.createElement('div');
-//   createWater.id = 'input-water';
-//   document.getElementById('meme-image-container').appendChild(createWater);
-// }
-
-// const inputWater = document.getElementById('water');
-
-// inputWater.addEventListener('click', water);
-
-// function earth() {
-//   const createEarth = document.createElement('div');
-//   createEarth.id = 'input-earth';
-//   document.getElementById('meme-image-container').appendChild(createEarth);
-// }
-
-// const inputEarth = document.getElementById('earth');
-
-// inputEarth.addEventListener('click', earth);
-
 function fire() {
   const borderMeme = document.getElementById('meme-image-container');
   borderMeme.style.border = '3px dashed red';
@@ -77,3 +47,14 @@ function earth() {
 
 const inputEarth = document.getElementById('earth');
 inputEarth.addEventListener('click', earth);
+
+function fileImg(event) {
+  const divMeme = document.getElementById('meme-image');
+  const prev = event.target;
+  divMeme.src = prev.src;
+}
+
+const memePreview = document.querySelectorAll('.preview-meme');
+for (let i = 0; i < memePreview.length; i += 1) {
+  memePreview[i].addEventListener('click', fileImg);
+}
