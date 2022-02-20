@@ -1,11 +1,11 @@
+const memeContainer = document.getElementById('meme-image-container');
+
 function isertPhrase() {
   const item = document.getElementById('text-input').value;
   const itemList = document.getElementById('meme-text');
   itemList.innerHTML = item;
-  // eslint-disable-next-line sonarjs/no-duplicate-string
-  document.getElementById('meme-image-container').appendChild(itemList);
-  const input = document.getElementById('meme-image-container');
-  input.value = '';
+  memeContainer.appendChild(itemList);
+  memeContainer.value = '';
 }
 
 document.getElementById('text-input').addEventListener('keyup', isertPhrase);
@@ -25,24 +25,21 @@ function readImage() {
 document.getElementById('meme-insert').addEventListener('change', readImage, false);
 
 function fire() {
-  const borderMeme = document.getElementById('meme-image-container');
-  borderMeme.style.border = '3px dashed red';
+  memeContainer.style.border = '3px dashed red';
 }
 
 const inputFire = document.getElementById('fire');
 inputFire.addEventListener('click', fire);
 
 function water() {
-  const borderMeme2 = document.getElementById('meme-image-container');
-  borderMeme2.style.border = '5px double blue';
+  memeContainer.style.border = '5px double blue';
 }
 
 const inputWater = document.getElementById('water');
 inputWater.addEventListener('click', water);
 
 function earth() {
-  const borderMeme3 = document.getElementById('meme-image-container');
-  borderMeme3.style.border = '6px groove green';
+  memeContainer.style.border = '6px groove green';
 }
 
 const inputEarth = document.getElementById('earth');
