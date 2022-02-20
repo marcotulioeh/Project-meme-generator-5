@@ -4,9 +4,11 @@
 
 #meme-text {
   /* position: absolute; */
-  color: blue;
-  font-size: 100px;
-  left: 40px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  left: 0px;
+  margin: 100px;
   top: 20px;
 
 }
